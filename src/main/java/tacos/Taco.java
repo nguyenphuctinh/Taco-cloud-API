@@ -1,6 +1,7 @@
 package tacos;
 
-import java.sql.Date;
+
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -29,6 +30,6 @@ public class Taco {
 
 	@PrePersist
 	void createdAt() {
-//		this.createdAt = new Date();
+		this.createdAt = new Date();
 	}
 }

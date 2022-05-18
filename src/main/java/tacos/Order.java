@@ -1,8 +1,8 @@
 package tacos;
 
 import java.io.Serializable;
-import java.sql.Date;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -56,6 +56,6 @@ public class Order implements Serializable {
 
 	@PrePersist
 	void placedAt() {
-//		this.placedAt = new Date();
+		this.placedAt = new java.util.Date();
 	}
 }
